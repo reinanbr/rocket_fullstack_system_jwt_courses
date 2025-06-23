@@ -1,0 +1,6 @@
+[default]
+template_dir = "src/templates/"
+
+
+[global.databases]
+sqlite_courses = { url = "sqlite:db_clientes.db" }

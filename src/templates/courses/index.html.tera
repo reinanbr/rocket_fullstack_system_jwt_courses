@@ -1,0 +1,21 @@
+{% extends "base" %}
+
+{% block title %}Cursos Disponíveis{% endblock %}
+
+{% block content %}
+    <h2 class="text-2xl font-semibold mb-4">Catálogo de Cursos</h2>
+    <ul class="space-y-4">
+        <li class="bg-white shadow p-4 rounded-lg hover:bg-blue-50 transition">
+            <h3 class="text-lg font-bold">Curso de Rust para Iniciantes</h3>
+            <p class="text-sm text-gray-600">Aprenda Rust do zero com exemplos práticos.</p>
+        </li>
+        <li class="bg-white shadow p-4 rounded-lg hover:bg-blue-50 transition">
+            <h3 class="text-lg font-bold">Programação Web com Rocket</h3>
+            <p class="text-sm text-gray-600">Crie sites rápidos e seguros com Rocket.</p>
+        </li>
+        <li class="bg-white shadow p-4 rounded-lg hover:bg-blue-50 transition">
+            <h3 class="text-lg font-bold">Desenvolvimento Fullstack em Rust</h3>
+            <p class="text-sm text-gray-600">Domine o backend e frontend usando apenas Rust.</p>
+        </li>
+    </ul>
+{% endblock %}

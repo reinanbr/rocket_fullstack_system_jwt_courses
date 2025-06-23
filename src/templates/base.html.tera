@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Plataforma de Cursos{% endblock %}</title>
+    <link href="/static/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Plataforma de Cursos</h1>
+            <div class="space-x-4">
+                <a href="/" class="hover:underline">Início</a>
+                <a href="/cursos" class="hover:underline">Cursos</a>
+                <a href="/sobre" class="hover:underline">Sobre</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <main class="flex-grow">
+        <div class="max-w-5xl mx-auto p-6">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-4 text-center text-sm text-gray-500">
+        &copy; 2025 Plataforma de Cursos. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
